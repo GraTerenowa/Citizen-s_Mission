@@ -1,0 +1,6 @@
+window.QR_LINKS = {
+  "photography": "https://TWOJA-DOMENA.PL/nowa-huta/clue.html?task=photography",
+  "crossword": "https://TWOJA-DOMENA.PL/nowa-huta/clue.html?task=crossword",
+  "tracking": "https://TWOJA-DOMENA.PL/nowa-huta/clue.html?task=tracking",
+  "cards": "https://TWOJA-DOMENA.PL/nowa-huta/clue.html?task=cards"
+};

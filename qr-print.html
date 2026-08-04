@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nowa Huta — printed QR cards</title>
+  <style>
+    *{box-sizing:border-box} body{margin:0;padding:18mm;background:#f4ecd8;color:#171815;font-family:Arial,sans-serif}
+    h1{margin:0 0 3mm;font-size:28pt}.note{margin:0 0 7mm;font-family:Georgia,serif}
+    .warning{margin:0 0 10mm;padding:4mm;border:3px solid #a32020;color:#a32020;font-weight:800;line-height:1.4}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:10mm}
+    .card{break-inside:avoid;border:3px solid #171815;padding:7mm;text-align:center;background:#fffaf0}
+    .number{color:#a32020;font-weight:900;letter-spacing:.15em}.card h2{margin:2mm 0 5mm;font-size:20pt;text-transform:uppercase}
+    img{width:55mm;max-width:100%;height:auto;border:2px solid #171815;padding:3mm;background:#f4ecd8}
+    .caption{margin:4mm 0 0;font-size:9pt;font-weight:700;letter-spacing:.08em}
+    .target{margin:3mm 0 0;font-size:7pt;line-height:1.35;overflow-wrap:anywhere}
+    @media print{body{padding:8mm}.grid{gap:5mm}.card{padding:4mm}.warning{display:none}}
+  </style>
+</head>
+<body>
+  <h1>NOWA HUTA // QR CLUES</h1>
+  <p class="note">Print these cards and place them at the corresponding stations. The QR codes are not shown on the main game page.</p>
+  <div class="warning" id="url-warning">Before printing, make sure the QR codes use the final public address of your website.</div>
+  <div class="grid">
+    <section class="card" data-task="photography"><div class="number">TASK 01</div><h2>Photography</h2><img src="assets/qr/photography.png" alt="Photography QR"><p class="caption">SCAN FOR ADDITIONAL INFORMATION</p><p class="target"></p></section>
+    <section class="card" data-task="crossword"><div class="number">TASK 02</div><h2>Crossword</h2><img src="assets/qr/crossword.png" alt="Crossword QR"><p class="caption">SCAN FOR ADDITIONAL INFORMATION</p><p class="target"></p></section>
+    <section class="card" data-task="tracking"><div class="number">TASK 03</div><h2>Trail Hunt</h2><img src="assets/qr/tracking.png" alt="Trail Hunt QR"><p class="caption">SCAN FOR ADDITIONAL INFORMATION</p><p class="target"></p></section>
+    <section class="card" data-task="cards"><div class="number">TASK 07</div><h2>Cards</h2><img src="assets/qr/cards.png" alt="Cards QR"><p class="caption">SCAN FOR ADDITIONAL INFORMATION</p><p class="target"></p></section>
+  </div>
+  <script src="qr-links.js"></script>
+  <script>
+    document.querySelectorAll('[data-task]').forEach((card) => {
+      const url = window.QR_LINKS && window.QR_LINKS[card.dataset.task];
+      card.querySelector('.target').textContent = url || 'URL unavailable';
+    });
+    const allLinks = Object.values(window.QR_LINKS || {});
+    const placeholder = allLinks.some((url) => /TWOJA-DOMENA|example\.com/i.test(url));
+    if (!placeholder) document.getElementById('url-warning').remove();
+  </script>
+</body>
+</html>

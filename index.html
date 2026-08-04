@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a32020">
+  <title>Nowa Huta // Seven Tasks</title>
+  <meta name="description" content="A seven-task field game set in Nowa Huta and inspired by the visual language of the Polish People's Republic.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="paper-noise" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="hero__topline">
+      <span>FIELD GAME // NOWA HUTA</span>
+      <span>FILE NO. NH–07</span>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__mark" aria-hidden="true">
+        
+      </div>
+      <div>
+        <p class="eyebrow">CITIZEN'S MISSION</p>
+        <h1>NOWA HUTA<br><span>SEVEN TASKS</span></h1>
+        <p class="hero__lead">Complete all seven stations in any order. Enter the final code obtained from each task. Your progress is saved automatically on this device.</p>
+      </div>
+    </div>
+
+    <div class="hero__grid">
+      <div class="hero__instruction">
+        <span class="instruction-number">1</span>
+        <p>Choose any task.</p>
+      </div>
+      <div class="hero__instruction">
+        <span class="instruction-number">2</span>
+        <p>Complete the physical challenge.</p>
+      </div>
+      <div class="hero__instruction">
+        <span class="instruction-number">3</span>
+        <p>Enter and confirm the final code.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="progress-panel" aria-label="Game progress">
+      <div>
+        <p class="progress-panel__label">MISSION PROGRESS</p>
+        <p class="progress-panel__value"><strong id="progress-count">0</strong> / 7 TASKS COMPLETED</p>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <span id="progress-bar"></span>
+      </div>
+      <button class="reset-button" id="reset-game" type="button">RESET PROGRESS</button>
+    </section>
+
+    <section class="tasks-section" aria-labelledby="tasks-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">AUTHORIZED TASK LIST</p>
+          <h2 id="tasks-title">SELECT A STATION</h2>
+        </div>
+        <p class="section-note">The order is entirely up to your team.</p>
+      </div>
+
+      <div class="tasks-grid" id="tasks-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>NOWA HUTA FIELD ARCHIVE</span>
+    <span>SEVEN TASKS // ONE MISSION</span>
+  </footer>
+
+  <dialog class="completion-dialog" id="completion-dialog">
+    <div class="completion-dialog__inner">
+      <div class="completion-star" aria-hidden="true">★</div>
+      <p class="eyebrow">MISSION REPORT</p>
+      <h2>ALL TASKS COMPLETED</h2>
+      <p>You have solved all seven challenges. Report to the game master for the final confirmation.</p>
+      <button type="button" id="close-dialog">RETURN TO TASK LIST</button>
+    </div>
+  </dialog>
+
+  <template id="task-template">
+    <article class="task-card">
+      <div class="task-card__status" aria-live="polite">OPEN</div>
+      <div class="task-card__header">
+        <span class="task-number"></span>
+        <div>
+          <p class="task-subtitle"></p>
+          <h3 class="task-title"></h3>
+        </div>
+      </div>
+      <p class="task-description"></p>
+      <form class="code-form" novalidate>
+        <label class="code-label">FINAL TASK CODE</label>
+        <div class="code-row">
+          <input class="code-input" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="ENTER CODE" maxlength="40" required>
+          <button class="code-button" type="submit">CONFIRM</button>
+        </div>
+        <p class="code-message" aria-live="polite"></p>
+      </form>
+    </article>
+  </template>
+
+  <script src="game-config.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
