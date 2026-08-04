@@ -1,6 +1,6 @@
 window.QR_LINKS = {
-  "photography": "https://TWOJA-DOMENA.PL/nowa-huta/clue.html?task=photography",
-  "crossword": "https://TWOJA-DOMENA.PL/nowa-huta/clue.html?task=crossword",
-  "tracking": "https://TWOJA-DOMENA.PL/nowa-huta/clue.html?task=tracking",
-  "cards": "https://TWOJA-DOMENA.PL/nowa-huta/clue.html?task=cards"
+  "photography": "https://github.com/GraTerenowa/Citizen-s_Mission/clue.html?task=photography",
+  "crossword": "https://github.com/GraTerenowa/Citizen-s_Mission/clue.html?task=crossword",
+  "tracking": "https://github.com/GraTerenowa/Citizen-s_Mission/clue.html?task=tracking",
+  "cards": "https://github.com/GraTerenowa/Citizen-s_Mission/clue.html?task=cards"
 };
