@@ -63,7 +63,7 @@ window.GAME_CONFIG = {
       "title": "Puzzles",
       "subtitle": "Order reveals meaning.",
       "description": "Find the QR code at the location marked on the map. Scan it to receive the clues you need to complete the task.",
-      "code": "CARDS31"
+      "code": "5575"
     }
   ]
 };
