@@ -15,9 +15,9 @@ window.CLUE_CONFIG = {
     "title": "Trail Hunt",
     "text": "Follow only the signs marked in red. Ignore repeated symbols and keep the order in which you find them."
   },
-  "cards": {
+  "puzzles": {
     "number": "07",
-    "title": "Cards",
+    "title": "Puzzles",
     "text": "Arrange the cards in chronological order. Read the marked characters from the oldest event to the newest."
   }
 };
