@@ -18,6 +18,6 @@ window.CLUE_CONFIG = {
   "puzzles": {
     "number": "07",
     "title": "Puzzles",
-    "text": "You are next to XI High School, the first high school in Nowa Huta. Since 1953, students have studied and solved challenging tasks here.\n\nNow it is your turn! Solve the three puzzles. Each puzzle gives you a number. Add the three numbers to find the final code. Good luck!""
+    "text": "You are next to XI High School, the first high school in Nowa Huta. Since 1953, students have studied and solved challenging tasks here.\n\nNow it is your turn! Solve the three puzzles. Each puzzle gives you a number. Add the three numbers to find the final code. Good luck!"
   }
 };
