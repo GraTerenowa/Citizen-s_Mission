@@ -15,7 +15,7 @@ window.GAME_CONFIG = {
       "title": "Photography",
       "subtitle": "Observe. Compare. Decode.",
       "description": "Find the QR code at the location marked on the map. Scan it to receive the clues you need to complete the task.",
-      "code": "PHOTO57"
+      "code": "51"
     },
     {
       "id": "crossword",
@@ -23,7 +23,7 @@ window.GAME_CONFIG = {
       "title": "Crossword",
       "subtitle": "Fill in the grid.",
       "description": "Find the QR code at the location marked on the map. Scan it to receive the clues you need to complete the task.",
-      "code": "CROSS84"
+      "code": "7"
     },
     {
       "id": "tracking",
@@ -31,7 +31,7 @@ window.GAME_CONFIG = {
       "title": "Trail Hunt",
       "subtitle": "Follow the signs.",
       "description": "Find the QR code at the location marked on the map. Scan it to receive the clues you need to complete the task.",
-      "code": "TRACK26"
+      "code": "291"
     },
     {
       "id": "bottle-caps",
@@ -39,7 +39,7 @@ window.GAME_CONFIG = {
       "title": "Bottle Cap Racing",
       "subtitle": "Aim. Flick. Win.",
       "description": "Go to the location marked on the map and find the game master waiting there. They will guide you through the task.",
-      "code": "CAPS19"
+      "code": "43"
     },
     {
       "id": "construction",
@@ -47,7 +47,7 @@ window.GAME_CONFIG = {
       "title": "Construction",
       "subtitle": "Build with precision.",
       "description": "Go to the location marked on the map and find the game master waiting there. They will guide you through the task.",
-      "code": "BUILD43"
+      "code": "98"
     },
     {
       "id": "kiosk",
@@ -55,12 +55,12 @@ window.GAME_CONFIG = {
       "title": "The Kiosk",
       "subtitle": "Nothing is quite obvious.",
       "description": "Go to the location marked on the map and find the game master waiting there. They will guide you through the task.",
-      "code": "KIOSK72"
+      "code": "00"
     },
     {
-      "id": "cards",
+      "id": "puzzles",
       "number": "07",
-      "title": "Cards",
+      "title": "Puzzles",
       "subtitle": "Order reveals meaning.",
       "description": "Find the QR code at the location marked on the map. Scan it to receive the clues you need to complete the task.",
       "code": "CARDS31"
